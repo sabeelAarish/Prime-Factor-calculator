@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="jscript.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2 style="text-align: center; margin-top: auto; color:white;">Find Prime Factors of a Number</h2>
+        <button onclick="test()">Enter a Value</button>
+        <p id="demo"></p>
+    </div>
+
+
+
+       <div class="box">
+           <h3>HTML CODE : </h3>
+           <pre>&lt;div class="container"&gt;
+            &lt;h2 style="text-align: center; margin-top: auto;"&gt;Find Prime Factors of a Number&lt;/h2&gt;
+            &lt;button onclick="test()"&gt;Enter a Value&lt;/button&gt;
+            &lt;p id="demo"&gt;&lt;/p&gt;
+        &lt;/div&gt;</pre>
+       </div>
+
+       <div class="box">
+        <h3>CSS CODE : </h3>
+        <pre>body  {
+            background-color: beige;
+        }
+        
+        button {
+        
+            margin-left: 190px;
+            padding: 9px;
+            border: 1px solid white;
+            background-color:teal;
+            color: white;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        
+            
+        }
+        
+        button:hover {
+             background-color: rgb(229, 226, 226);
+             color: rgba(13, 14, 13, 0.993);
+        }
+        
+        .container {
+            margin: auto;
+            width: 500px; 
+            background-color: rgb(75, 130, 212);
+            margin-top: 70px;
+            padding: 50px;
+            border: 1px solid rgb(185, 184, 184);
+            border-radius: 4px;
+        }
+        
+        #demo {
+        
+        
+          font-family: serif;
+          color:rgb(255, 255, 255);
+          text-align: center;
+          
+          
+        
+        }
+        </pre>
+    </div>
+
+    <div class="box">
+        <h3>JAVASCRIPT CODE : </h3>
+        <pre>function test() {
+
+            var x = [];
+            var j=0;
+            var fname= prompt("Enter value to factorize");
+          
+              
+               if(fname&gt;0) {
+          
+               for(var i=1; i&lt;fname; i++) {
+            
+                     if(fname%i==0) { 
+          
+                      x[j]=i;
+                      j++;
+                                    }
+              document.getElementById("demo").innerHTML= `The Prime Factors of ${fname} are ${x}`;
+          
+                                          }
+                          }
+           else {
+             document.getElementById("demo").innerHTML = "Your Number must be greater than zero";
+           }
+           }
+           </pre>
+    </div>
+       
+
+</body>
+</html>

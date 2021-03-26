@@ -1,0 +1,64 @@
+body  {
+    background-color: beige;
+}
+
+button {
+
+    margin-left: 190px;
+    padding: 9px;
+    border: 1px solid white;
+    background-color:teal;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+    
+}
+
+button:hover {
+     background-color: rgb(229, 226, 226);
+     color: rgba(13, 14, 13, 0.993);
+}
+
+.container {
+    margin: auto;
+    width: 500px; 
+    background-color: rgb(75, 130, 212);
+    margin-top: 70px;
+    padding: 50px;
+    border: 1px solid rgb(185, 184, 184);
+    border-radius: 4px;
+}
+
+#demo {
+
+
+  font-family: serif;
+  color:rgb(255, 255, 255);
+  text-align: center;
+  
+  
+
+}
+
+
+.box {
+  margin:auto;
+  width: 1250px;
+  height: auto;
+  background-color: teal;
+}
+.box h3 {
+
+  color: white;
+  padding: 8px;
+
+}
+.box pre {
+  background-color: white;
+  padding: 20px;
+
+}
+ 
+
+
+
